@@ -20,8 +20,11 @@ class SplashActivity : AppCompatActivity() {
             insets
         }
         Handler().postDelayed({
-            var intent=Intent(this, MainActivity::class.java)
+            var intent=Intent(this, MainActivity::class.java,)
+
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
+            finish()
         },1000)
     }
 }

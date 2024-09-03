@@ -2,6 +2,6 @@ package com.example.foodapp.Utils
 
 class Utils {
     companion object{
-        const val  BASE_URL="http://192.168.1.3:8000/"
+        const val  BASE_URL="https://23d1-116-107-163-185.ngrok-free.app/"
     }
 }
