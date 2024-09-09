@@ -47,7 +47,7 @@
 
             <ImageView
                 android:layout_marginLeft="5dp"
-                android:id="@+id/imageView7"
+                android:id="@+id/imageSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/muiten" />
@@ -62,10 +62,28 @@
             android:layout_height="wrap_content"
             android:src="@drawable/choose" />
     </LinearLayout>
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyview"
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
-        android:layout_height="220dp" />
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="#A24629"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="𝓒ó 𝓽𝓱ể 𝓫ạ𝓷 đ𝓪𝓷𝓰 𝓽𝓱è𝓶?"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/recyviewMeals"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
+
+
+

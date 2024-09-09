@@ -9,11 +9,6 @@ import com.example.foodapp.modol.Category
 
 class AdapterCategories():RecyclerView.Adapter<AdapterCategories.MyViewHold>() {
     private var categoriesList = ArrayList<Category>()
-
-
-
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHold {
         return MyViewHold(ItemCategoryBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
@@ -30,10 +25,6 @@ class AdapterCategories():RecyclerView.Adapter<AdapterCategories.MyViewHold>() {
     override fun getItemCount(): Int {
        return categoriesList.size
     }
-
-
     class MyViewHold(var binding:ItemCategoryBinding) :RecyclerView.ViewHolder(binding.root){
-
     }
-
 }

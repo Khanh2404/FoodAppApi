@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/homeFragment2"
+<item android:id="@+id/homeFragment"
     android:title="Home"
     android:icon="@drawable/baseline_home_24"
     android:menuCategory="secondary"/>
-    <item android:id="@+id/cartFragment3"
+    <item android:id="@+id/cartFragment"
         android:title="Cart"
         android:icon="@drawable/baseline_shopping_cart_24"
         android:menuCategory="secondary"/>
-    <item android:id="@+id/favortieFragment2"
+    <item android:id="@+id/favortieFragment"
         android:title="Fovorite"
         android:icon="@drawable/baseline_favorite_24"
         android:menuCategory="secondary"/>

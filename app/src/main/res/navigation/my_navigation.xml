@@ -3,20 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_navigation"
-    app:startDestination="@id/homeFragment2">
+    app:startDestination="@id/homeFragment">
+
     <fragment
-        android:id="@+id/homeFragment2"
+        android:id="@+id/homeFragment"
         android:name="com.example.foodapp.ui.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+    <action
+        android:id="@+id/action_homeFragment_to_cartFragment"
+        app:destination="@id/cartFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/favortieFragment2"
+        android:id="@+id/favortieFragment"
         android:name="com.example.foodapp.ui.fragment.FavortieFragment"
         android:label="fragment_favortie"
         tools:layout="@layout/fragment_favortie" />
     <fragment
-        android:id="@+id/cartFragment3"
+        android:id="@+id/cartFragment"
         android:name="com.example.foodapp.ui.fragment.CartFragment"
         android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_cart" >
+    </fragment>
 </navigation>
