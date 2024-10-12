@@ -19,7 +19,7 @@
         android:background="#53BA57">
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_gravity="center"
-            android:id="@+id/imgmeal"
+            android:id="@+id/imgmealbycate"
             android:layout_width="120dp"
             android:layout_height="120dp"
             app:shapeAppearance="@style/RoundedImageViewStyle"
@@ -32,7 +32,7 @@
             <TextView
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:id="@+id/txtNameMeal"
+                android:id="@+id/txtnamemealbycate"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -42,7 +42,7 @@
                 android:textColor="#CA1C1C"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:id="@+id/txtpriceMeal"
+                android:id="@+id/txtpricemealbycate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"

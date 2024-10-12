@@ -10,15 +10,16 @@ import com.example.foodapp.modol.Meal
 
 class AdapterMeals(private val onMealLongClick: (Meal, View) -> Unit): RecyclerView.Adapter<AdapterMeals.MyViewHold>() {
     private var mealsList = ArrayList<Meal>()
-
+    var itemClickCategory : ((Meal)->Unit)?=null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHold {
         return MyViewHold(ItemMealBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: MyViewHold, position: Int) {
         val meal = mealsList[position]
-        holder.binding.txtnameMeal.text = mealsList[position].strMeal
-        Glide.with(holder.itemView).load(mealsList[position].strMealThumb).into(holder.binding.imgMeal)
+        holder.binding.txtNameMeal.text = mealsList[position].strMeal
+        holder.binding.txtpriceMeal.text=mealsList[position].price+"$"
+        Glide.with(holder.itemView).load(mealsList[position].strMealThumb).into(holder.binding.imgmeal)
         holder.itemView.setOnLongClickListener {
             onMealLongClick(meal, it)
             true

@@ -9,12 +9,12 @@ import com.bumptech.glide.Glide
 import com.example.foodapp.R
 import com.example.foodapp.modol.Meal
 
-class PovortieAdapter : RecyclerView.Adapter<PovortieAdapter.PovortieViewHolder>() {
+class FovoriteAdapter : RecyclerView.Adapter<FovoriteAdapter.PovortieViewHolder>() {
     private var items: List<Meal> = emptyList()
 
     inner class PovortieViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val mealName: TextView = itemView.findViewById(R.id.mealPovortieName)
-        private val mealImage: ImageView = itemView.findViewById(R.id.mealPovortieImage)
+        private val mealName: TextView = itemView.findViewById(R.id.mealName)
+        private val mealImage: ImageView = itemView.findViewById(R.id.mealImage)
 
         fun bind(meal: Meal) {
             mealName.text = meal.strMeal

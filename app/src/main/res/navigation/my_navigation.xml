@@ -13,12 +13,15 @@
     <action
         android:id="@+id/action_homeFragment_to_cartFragment"
         app:destination="@id/cartFragment" />
+    <action
+        android:id="@+id/action_homeFragment_to_fovoriteFragment"
+        app:destination="@id/favoriteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/favortieFragment"
-        android:name="com.example.foodapp.ui.fragment.FavortieFragment"
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.foodapp.ui.fragment.FovoriteFragment"
         android:label="fragment_favortie"
-        tools:layout="@layout/fragment_favortie" />
+        tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/cartFragment"
         android:name="com.example.foodapp.ui.fragment.CartFragment"

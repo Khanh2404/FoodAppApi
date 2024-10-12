@@ -8,7 +8,7 @@
         android:title="Cart"
         android:icon="@drawable/baseline_shopping_cart_24"
         android:menuCategory="secondary"/>
-    <item android:id="@+id/favortieFragment"
+    <item android:id="@+id/favoriteFragment"
         android:title="Fovorite"
         android:icon="@drawable/baseline_favorite_24"
         android:menuCategory="secondary"/>

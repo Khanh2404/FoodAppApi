@@ -5,7 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.fragment.CartFragment">
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Giỏ Hàng"
+    android:textStyle="bold"
+    android:textSize="40dp"
+    android:layout_gravity="center"
+    />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewCart"
         android:layout_width="match_parent"

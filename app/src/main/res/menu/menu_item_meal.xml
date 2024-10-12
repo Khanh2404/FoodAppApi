@@ -6,4 +6,8 @@
     <item
         android:id="@+id/action_add_to_favorites"
         android:title="Thêm vào yêu thích"/>
+    <item
+        android:id="@+id/thanhtoan"
+        android:title="Thanh toán"
+        />
 </menu>

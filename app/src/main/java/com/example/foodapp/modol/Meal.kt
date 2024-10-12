@@ -5,5 +5,6 @@ data class Meal(
     val idMeal: Int,
     val idcategory: Int,
     val strMeal: String,
-    val strMealThumb: String
+    val strMealThumb: String,
+    val price:String
 )

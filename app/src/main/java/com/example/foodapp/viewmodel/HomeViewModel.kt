@@ -1,9 +1,11 @@
 package com.example.foodapp.viewmodel
 
 import android.util.Log
+import android.widget.ImageView
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.foodapp.R
 import com.example.foodapp.modol.Category
 import com.example.foodapp.modol.Meal
 import com.example.foodapp.modol.categories

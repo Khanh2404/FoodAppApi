@@ -8,5 +8,7 @@ class Category(
     @SerializedName("categoryThumb")
     val categoryThumb:String,
     @SerializedName("id")
-    val id:Int
+    val id:Int,
+   @SerializedName("price")
+    val price:Int
 )

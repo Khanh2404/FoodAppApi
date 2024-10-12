@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.foodapp.databinding.FragmentFavortieBinding
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.foodapp.adapter.FovoriteAdapter
+import com.example.foodapp.databinding.FragmentFavoriteBinding
 import com.example.foodapp.viewmodel.FovoriteViewModel
 
-import com.example.foodapp.viewmodel.FovortieViewModel
 
-class FovortieFragment: Fragment() {
-    private lateinit var binding: FragmentFovoriteBinding
+class FovoriteFragment: Fragment() {
+    private lateinit var binding: FragmentFavoriteBinding
     private lateinit var adapter: FovoriteAdapter
     private lateinit var fovoriteViewModel: FovoriteViewModel
 
@@ -21,22 +21,22 @@ class FovortieFragment: Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentFovoriteBinding.inflate(inflater, container, false)
+        binding = FragmentFavoriteBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
-        fovortieViewModel = ViewModelProvider(requireActivity()).get(FovortieViewModel::class.java)
-        fovortieViewModel.fovortieItems.observe(viewLifecycleOwner, { items ->
+        fovoriteViewModel = ViewModelProvider(requireActivity()).get(FovoriteViewModel::class.java)
+        fovoriteViewModel.fovoriteItems.observe(viewLifecycleOwner, { items ->
             adapter.setData(items)
         })
     }
 
     private fun setupRecyclerView() {
         adapter = FovoriteAdapter()
-        binding.recyclerViewFovorite.layoutManager = LinearLayoutManager(context)
-        binding.recyclerViewFovorite.adapter = adapter
+        binding.recyclerViewfovorite.layoutManager = LinearLayoutManager(context)
+        binding.recyclerViewfovorite.adapter = adapter
     }
 }
